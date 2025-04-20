@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  chatbot:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./responses:/app/responses
+      - ./temp_responses:/app/temp_responses
+      - ~/.fordllm-token-cache.json:/root/.fordllm-token-cache.json
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
