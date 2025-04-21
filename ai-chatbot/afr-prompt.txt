@@ -1,0 +1,7 @@
+Every year I want to clean-up my official laptop.
+	Need to move all personal Image files with respective folders (jpg, jpeg, bmp...) into user profle folder as "tobedeleted/images"
+	Need to delete move all personal pdf/txt/docx/csv files and if it is official, then need to old more than 3 years old in user profile folder as "tobedeleted/pdf or tobedeleted/txt or tobedeleted/docs or tobedeleted/csv" folder.
+
+Please create one python web app (using flask)
+
+https://curly-xylophone-69w7wjq6xxf5wv4-5000.app.github.dev/
