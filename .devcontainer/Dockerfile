@@ -29,3 +29,10 @@ RUN ./get_helm.sh
 RUN apt-get autoremove -y && apt-get clean -y
 
 # USER vscode
+
+# Set the working directory
+WORKDIR /workspace
+
+# Copy requirements.txt and install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
