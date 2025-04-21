@@ -1,4 +1,4 @@
-    FROM ubuntu:latest
+FROM ubuntu:latest
 
 # Update package lists
 RUN apt-get update
@@ -31,7 +31,7 @@ RUN apt-get autoremove -y && apt-get clean -y
 # USER vscode
 
 # Set the working directory
-WORKDIR /workspace
+# WORKDIR /workspaces
 
 # Copy requirements.txt and install dependencies
 COPY requirements.txt .
