@@ -13,7 +13,7 @@
     // "forwardPorts": [9000, 8080, 5000],
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "kind create cluster --wait 5m",
+    "postCreateCommand": "kind create cluster --wait 5m && pip install --no-cache-dir -r requirements.txt",
 
     // Configure tool-specific properties.
     "customizations": {
