@@ -14,8 +14,8 @@ RUN mkdir -p responses temp_responses && \
     chmod 777 responses temp_responses
 
 # Use a non-root user for better security
-RUN useradd -m appuser
-USER appuser
+# RUN useradd -m appuser
+# USER appuser
 
 # Expose the port Flask will run on
 EXPOSE 5000
